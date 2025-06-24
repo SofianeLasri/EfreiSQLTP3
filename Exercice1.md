@@ -210,3 +210,8 @@ Résultat :
 
 Utilise l'index.
 
+## 1.5 Analyse et réflexion
+
+Le B-tree est efficace sur les opérations de comparaisons de valeur eentières et fixes (WHERE de comparaison d'état <=> & LIKE préfixés).
+L'index n'est pas utilisé sur les opéarations où l'élément de compairaison est trop dynamique (LIKE suffixés et LIKE '%donnée%').
+Le choix d'un B-tree est donc préférable pour des comparaisons avec forte cardinalité (id,datetime et nom propres/email).
